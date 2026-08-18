@@ -12,5 +12,6 @@ class Child extends Parent{
 public class SuperDemo{
     public static void main(String[] args) {
         Child c = new Child();
+        c.display();
     }
 }
