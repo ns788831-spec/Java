@@ -1,0 +1,25 @@
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FH {
+    public static void main(String[] args) {
+        try {
+            // Writing to the file
+            FileWriter writer = new FileWriter("data.txt");
+            writer.write("Welcome to java file Handling. \n");
+            writer.write("This is an example of writing and reading a file.");
+            writer.close();
+            //Reading from the file 
+            FileReader reader = new FileReader("data.txt");
+            int ch;
+            System.out.println("Contents of the file : ");
+            while((ch = reader.read() != false )){
+                System.out.println((char)ch);
+            }
+            reader.close();
+        } catch (IOException e) {
+            System.out.println("An error occured : "+ e.getMessage());
+        }
+    }
+}
