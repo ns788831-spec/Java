@@ -1,10 +1,8 @@
-
-
 public class NestedTryExample {
     public static void main(String[] args) {
         try{
             //Outer try block
-            System.out.println("Oter try block started: ");
+            System.out.println("Outer try block started: ");
             try {
                 // Inner try block 
                 System.out.println("Inner try block started.");
