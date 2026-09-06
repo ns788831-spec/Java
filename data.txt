@@ -1,0 +1,2 @@
+Welcome to java file Handling. 
+This is an example of writing and reading a file.

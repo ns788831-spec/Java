@@ -14,8 +14,8 @@ public class FH {
             FileReader reader = new FileReader("data.txt");
             int ch;
             System.out.println("Contents of the file : ");
-            while((ch = reader.read() != false )){
-                System.out.println((char)ch);
+            while((ch = reader.read()) != -1 ){
+                System.out.print((char)ch);
             }
             reader.close();
         } catch (IOException e) {
